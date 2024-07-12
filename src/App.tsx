@@ -117,7 +117,7 @@ const App = () => {
 
   const renderChildrenData = subData => {
     return subData.map(val => (
-      <React.Fragment className="" key={val.id}>
+      <React.Fragment key={val.id}>
         <tr
           className="cursor-pointer ml-32"
           onClick={() => toggleExpand(val.id)}
