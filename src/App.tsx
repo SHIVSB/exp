@@ -155,7 +155,7 @@ const App = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="flex justify-start w-[600px] py-6 px-6">
+      <div className="flex justify-center w-[600px] py-6">
         <div className="flex gap-x-2">
           <HeadingTab
             heading="Overview"
