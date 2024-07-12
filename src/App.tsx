@@ -46,7 +46,7 @@ const HeadingTab = ({
 };
 
 const App = () => {
-  const [entries, setEntries] = useState([
+  const entries = [
     {
       id: 1,
       title: 'Package 1',
@@ -103,7 +103,7 @@ const App = () => {
         },
       ],
     },
-  ]);
+  ];
 
   const [expanded, setExpanded] = useState({});
   const [activeTab, setActiveTab] = useState<string>('overview');
@@ -117,7 +117,7 @@ const App = () => {
 
   const renderChildrenData = subData => {
     return subData.map(val => (
-      <div className="" key={val.id}>
+      <React.Fragment className="" key={val.id}>
         <tr
           className="cursor-pointer ml-32"
           onClick={() => toggleExpand(val.id)}
@@ -146,7 +146,7 @@ const App = () => {
               <td className="border px-4 py-2">{val2?.total}</td>
             </tr>
           ))}
-      </div>
+      </React.Fragment>
     ));
   };
 
